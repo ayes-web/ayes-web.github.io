@@ -1,0 +1,90 @@
+.Title {
+ font-size: 50px; 
+ background-color: white; 
+ padding: 10px; 
+ border-radius: 10px; 
+ margin-top: 100px;
+ color: linear-gradient(311deg, #b20ee9, #f615ea, #2815f6, #1597f6);
+ background-size: 800% 800%;
+
+ -webkit-animation: Animationpurple 31s ease infinite;
+ -moz-animation: Animationpurple 31s ease infinite;
+ -o-animation: Animationpurple 31s ease infinite;
+ animation: Animationpurple 31s ease infinite;
+}
+.Kast {
+  background-color: white; 
+  width:70%; 
+  height: 600px; 
+  margin-top: 50px; 
+  border-radius: 10px; 
+  align-content: center;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  font-size: 40px;
+  -o-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -webkit-transition: 1s linear;
+  width:  max-content;
+  margin-left: 30px;
+  text-decoration: none;
+}
+a:hover {
+  background-color: black;
+  color: white;
+  -o-transition: 0.5s linear;
+  -ms-transition: 0.5 linear;
+  -moz-transition: 0.5 linear;
+  -webkit-transition: 0.5s linear;
+  padding-left: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px; 
+}
+
+a:visited {
+  background-color: purple;
+  color: gray;
+  text-align: center;
+}
+a:visited:hover {
+  color: white;
+  background-color: black;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+@-webkit-keyframes Animationpurple {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-moz-keyframes Animationpurple {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-o-keyframes Animationpurple {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@keyframes Animationpurple {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+

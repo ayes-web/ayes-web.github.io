@@ -1,0 +1,19 @@
+.box {
+  margin-inline: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 30%;
+  margin-bottom: 100px;
+  
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border-color: black;
+  border-style: inset;
+  border-radius: 10px;
+ -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);  
+}
+body {
+  background-image: url(/assets/rain.gif);
+}

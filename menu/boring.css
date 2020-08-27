@@ -1,0 +1,48 @@
+	.box {
+		margin-top: 100px;
+		margin-left: 100px;
+		margin-right: 100px;
+		padding: 50px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		border-radius: 30px;
+		background: linear-gradient(145deg, #7232c2, #883be6);
+		box-shadow:  20px 20px 60px #6c2fb7, 
+             -20px -20px 60px #923ff7;
+	}
+	.box a:hover{
+		animation: hoverLoop 0.5s alternate infinite;
+	}
+	.box a {
+		font-size: 30px;
+		background-color: transparent;
+		color: white;
+		text-decoration: none;
+		padding-top:20px;
+		padding-bottom: 20px;
+		padding-right: 40px;
+		padding-left:40px;
+	}
+	body {
+		background-color: #7f37d7;
+	}
+	@keyframes hoverLoop
+	{
+		from 
+		{
+			color: white;
+		}
+		to 
+		{
+			color: #C6A0FF;
+		}
+
+	}
+#styleBox {
+  width: fit; 
+  height:50px; 
+	background-image: linear-gradient(to right, red,purple); 
+	opacity: .2;
+  cursor: pointer;
+}

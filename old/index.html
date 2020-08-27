@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool site</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">  
+    <link rel="stylesheet" type="text/css" href="css/scroll.css">
+    <script src="js/js.js"></script>
+</head>
+<body style="background-color: black;" class="flex-container">  
+  <div class="title noselect scroll-right">
+    <p>Welcome to the best site on the webs</p>
+  </div>
+    <div class="ContentMenu">
+        <b class="noselect glow" style="font-size: 50px;">Idle game</b>
+        <div>
+          <p1 id="MD">0</p1> <p1 class="noselect">Cash</p1> 
+        </div>
+        <button class="button noselect" onclick="ClickDisplay(); BC += 1; Stats()"></button>
+        <div>
+
+        <label>Buying amount: </label>
+        <input type="text" name="Kogus" onkeyup="InputCalc()" onchange="InputCalc()"/>
+        <br>
+        <p2>Price: </p2><p2 id="PD">10</p2>
+        <br>
+        <button id="TicketButton" class="button2" onclick="BuyTicket()">Buy ticket</button>
+     </div>
+    </div> 
+    <div class="ContentMenu" style="height: 200px;">
+        <b class="noselect glow" style="font-size: 50px;">Stats</b>
+        <br>
+        <p1 id="BS">0</p1> <p1 class="noselect">Clicks total.</p1>
+        <br>
+        <p2 id="MS">0</p2> <p2 class="noselect">Money total.</p2>
+        <br>
+        <p3 id="TP">0</p3> <p3 class="noselect">Time on site.</p3>
+        <br>
+        <p4 id="TT">0</p4> <p4 class="noselect">Tickets.</p4>
+    </div> 
+ 
+    <div class="ContentMenu" style="float: right;">
+      <b> Todays news balalalalalalal</b>
+      <br>
+      <a href="/index.html">Main menu of links</a>
+    </div>
+
+</body>
+
+</html>

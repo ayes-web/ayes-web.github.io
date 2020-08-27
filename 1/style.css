@@ -1,0 +1,46 @@
+.e button {
+  margin: 10px;
+  padding: 10px;
+  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  transition-duration: 5s;
+  animation-name: size2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.e button:hover {
+  background-color: black;
+  color: white;
+  animation-name: size;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@Keyframes size2 {
+  from {
+    width: max-content;
+    position: absolute
+  }
+  to {
+    width: 11%;
+  }
+}
+@Keyframes size {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 90%;
+  }
+}
+#e {
+  border-style:solid;
+  border-image: url(/assets/green-rain.gif) 1 round;
+  border-width: 20px;
+}
+body {
+    background-image: url(/assets/green-rain.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

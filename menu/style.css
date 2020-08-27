@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+  transition-duration: 1s;
+  font-family: "Courier New", Courier, monospace;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  color: white;
+  font-size: 40px;
+}
+.box div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.box:hover a {
+    opacity: .5;
+}
+.box a:hover {
+  font-weight: bolder;
+  opacity: 1;
+  color: black;
+  background-color: white;
+  width: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.box a:hover + div {
+  font-weight: bolder;
+  color: white;
+  display: block;
+  font-size: 18px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#styleBox {
+  width: fit; 
+  height:50px; 
+  background-image: linear-gradient(to right, cyan,blue,purple); 
+  cursor: pointer;
+}

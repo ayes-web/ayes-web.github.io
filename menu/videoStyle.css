@@ -1,0 +1,25 @@
+body {
+  background-color: gray;
+}
+.box {
+  position:absolute;                  
+  bottom:0;                          
+  background-color: white;
+  padding: 30px 100px 10px 50px
+}
+.box a {
+  text-decoration: none;
+}
+.box a:hover {
+  text-align: center;
+  color: red;
+}
+.box a:visited {
+  color: black
+}
+#styleBox {
+  width: fit; 
+  height:50px; 
+	background-color: black;
+  cursor: pointer;
+}
