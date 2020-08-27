@@ -43,3 +43,9 @@ a {
   background-image: linear-gradient(to right, cyan,blue,purple); 
   cursor: pointer;
 }
+.about {
+  display: none;
+}
+.about:hover {
+display: block;
+}
