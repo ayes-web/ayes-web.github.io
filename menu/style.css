@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Roboto', sans-serif;
 }
 .box {
   display: flex;
@@ -15,6 +15,9 @@ body {
 .box div{
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.entry div {
+  font-size: 20px;
 }
 .box:hover a {
     opacity: .5;
@@ -33,6 +36,9 @@ body {
   font-weight: bolder;
   color: white;
   display: block;
+}
+.box.entry div:hover {
+  display:none;
 }
 a {
   color: white;
