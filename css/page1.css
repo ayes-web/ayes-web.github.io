@@ -2,7 +2,6 @@ body {
   color: #600367;
 	background-color: black;
 	font-family: "Courier New", Courier, monospace;
-	cursor: url(/Assets/Cursors/cursor.gif), default;
 	margin: 0;
 	height: 100%;
 	overflow:hidden;
