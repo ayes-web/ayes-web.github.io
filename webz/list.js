@@ -47,16 +47,16 @@ var animation = ["Web sites","Web site","Web sit","Web si","Web s","Web ","We","
 function listLoad() {
     x = 0;
     for (i = 0; i < values.length; i++) {
-    
-    
-    if (values[i][0].startsWith("https://") === true) 
+
+
+    if (values[i][0].startsWith("https://") === true)
     {
       var PREFIX = "https://";
       if (values[i][0].indexOf(PREFIX) === 0) {
       linkClean = values[i][0].slice(PREFIX.length);
       }
-    } 
-    else if (values[i][0].startsWith("http://") === true) 
+    }
+    else if (values[i][0].startsWith("http://") === true)
     {
       PREFIX = "http://";
       if (values[i][0].indexOf(PREFIX) === 0) {
@@ -74,7 +74,7 @@ function listLoad() {
     entry.target = "_blank";
     div.className = "entry";
     div.id = i;
-    div.innerHTML = "<img height='25' width='25' src='http://www.google.com/s2/favicons?domain=" + values[i][0] + "'>" + values[i][1];
+    div.innerHTML = "<img height='25' width='25' src='https://i.olsh.me/icon?size=25&url=" + values[i][0] + "'>" + values[i][1];
     document.getElementById("list").appendChild(div);
     document.getElementById(i).appendChild(entry);
     x += values[i];
@@ -87,7 +87,7 @@ window.onload = function() {
   });
 }
 l = 0;
-setInterval(function(){ 
+setInterval(function(){
     if (l >= animation.length) {
       l = 0;
     }
