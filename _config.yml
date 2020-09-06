@@ -1,0 +1,12 @@
+title: ayes-web
+baseurl: /ayes-web
+url: "https://ayes-web.github.io"
+
+gems:
+  - jekyll-redirect-from
+
+exclude:
+ - Gemfile
+ - Gemfile.lock
+
+permalink: pretty
