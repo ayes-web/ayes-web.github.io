@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  transition-duration: 1s;
   font-family: "Courier New", Courier, monospace;
 }
 .box {
@@ -38,9 +37,9 @@ a {
   text-decoration: none;
 }
 #styleBox {
-  width: fit; 
-  height:50px; 
-  background-image: linear-gradient(to right, cyan,blue,purple); 
+  width: fit;
+  height:50px;
+  background-image: linear-gradient(to right, cyan,blue,purple);
   cursor: pointer;
 }
 .about {
