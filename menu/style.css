@@ -9,10 +9,12 @@ body {
   color: white;
   font-size: 40px;
 }
-.box div {
+.box.about {
+  font-size: 18px;
+}
+.box div{
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 18px;
 }
 .box:hover a {
     opacity: .5;

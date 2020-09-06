@@ -1,0 +1,26 @@
+.text {
+	white-space: initial;
+	background-color: #F3F7F0; 
+	text-align: center;
+	border: 10px solid #19323C;
+	margin-bottom: 30px;
+}
+body {
+	background-color: #306073;
+	font-family: 'Roboto', sans-serif;
+	padding: 100px;
+}
+h1 {
+	letter-spacing: normal;
+	font-size: unset;
+	font-size: 35px;
+}
+.broke {
+	margin:50px;
+}
+p {
+	letter-spacing: 30px;
+	font-size: 40px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
