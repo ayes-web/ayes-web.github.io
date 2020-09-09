@@ -1,5 +1,5 @@
 title: ayes-web
-baseurl: /ayes-web
+baseurl: /
 url: "https://ayes-web.github.io"
 
 gems:

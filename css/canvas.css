@@ -1,0 +1,21 @@
+html, body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+#menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+    border-image-slice: 1;
+    border-style: solid;
+    margin: 20px;
+    padding: 0px 10px 0px 10px;
+    backdrop-filter: blur(100px);
+    cursor: pointer;
+    text-align: center;
+}
