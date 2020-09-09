@@ -80,12 +80,6 @@ function listLoad() {
     x += values[i];
   }
 }
-window.onload = function() {
-  var elevator = new Elevator({
-    element: document.querySelector('.elevator-button'),
-    duration: 1000 // milliseconds
-  });
-}
 l = 0;
 setInterval(function(){
     if (l >= animation.length) {
@@ -94,3 +88,10 @@ setInterval(function(){
     document.title = animation[l];
     l += 1;
   }, 500);
+window.onload = function() {
+  listLoad()
+  var elevator = new Elevator({
+    element: document.querySelector('.elevator-button'),
+    duration: 1000 // milliseconds
+  });
+}

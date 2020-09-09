@@ -1,0 +1,17 @@
+body {
+    overflow: hidden;
+    background: transparent;
+    background-color: rgb(31, 34, 39)
+}
+h1 {
+    font-size: 100px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    text-align: center;
+    margin: 100px;
+    text-shadow:  20px 20px 200px #09009f, -20px -20px 200px #00ff95;
+    user-select: none;
+}
