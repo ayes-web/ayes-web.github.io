@@ -1,0 +1,60 @@
+#buttons_menu {
+    flex-direction: row;
+    flex-wrap: wrap
+}
+canvas {
+    border: 1px black solid;
+    position: absolute;
+    top: 0;
+    left: 10;
+    background: white;
+}
+#color-menu {
+    border: solid 2px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    background: black;
+}
+#color {        
+    height: 60px;
+    width: -webkit-fill-available;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    padding: 0px;
+}
+.button {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    background-color: white;
+    cursor: pointer;
+    border: solid 2px black;
+    margin-right: 10px;
+}
+#menu {
+    top: 10;
+    left: 10;
+    z-index: 2;
+    position: absolute;
+    
+    flex-direction: column;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border: 4px;
+    border-radius: 30px;
+}
+div {
+    display: flex
+}
+.selected {
+    box-shadow: 0px 0px 40px 10px blue;
+    border: 2px blue solid;
+}
