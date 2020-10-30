@@ -18,8 +18,7 @@
   background-color: black;
   border-radius: 20px;
   background: linear-gradient(145deg, #4da7db, #5bc6ff);
-  box-shadow:  20px 20px 60px #489dcf, 
-             -20px -20px 60px #62d5ff;
+  box-shadow:  20px 20px 60px #489dcf, -20px -20px 60px #62d5ff;
 }
 .input-group {
   margin-top: 10px;

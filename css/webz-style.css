@@ -1,4 +1,4 @@
-@KeyFrames blink
+@keyframes blink
 {
 	from {
 		color: #039be5;
@@ -7,20 +7,18 @@
 		color: cyan;
 	}
 }
-body 
-{
+body {
 	font-family: "Courier New", Courier, monospace;
 	font-weight: bold;
 	font-size: 18px;
 	text-align: left;
 	background-color: black;
-  color: white;
-  background-image: url(/assets/image-reversing2.gif);
-  display: flex;
+  	color: white;
+  	background-image: url(/assets/image-reversing2.webp);
+  	display: flex;
 	flex-direction: column;
 }
-.url
-{
+.url {
 	word-wrap: break-word;
 	overflow-wrap: normal;
 	display: flex;
@@ -29,40 +27,29 @@ body
 	text-decoration: none;	
 	color: #039be5;
 }
-.url a:hover 
-{
-  animation: blink 0.6s infinite alternate;
+.url:hover {
+  	animation: blink 0.6s infinite alternate;
 }
-.entry img 
-{
-  margin-right: 10px;
+.entry img {
+  	margin-right: 10px;
 }
-#title 
-{
- text-align: center; 
+#title {
+ 	text-align: center; 
 }
-img 
-{
-  user-select: none;
-}
-.list 
-{
-  margin: 0px 50px 0px 50px;
+.list {
+  	margin: 0px 50px 0px 50px;
 	padding: 70px 100px 50px 100px;
 	background-color: black;
 	border-radius: 50px;
-  box-shadow:  20px 20px 60px #000000, 
-             -20px -20px 60px #000000;
+  	box-shadow:  20px 20px 60px #000000, -20px -20px 60px #000000;
 }
-.elevator-button:hover
-{
-  cursor: pointer;
+.elevator-button:hover {
+  	cursor: pointer;
 }
-.elevator-button 
-{
-  position: fixed;
-  width: 36px;
-  height: 36px;
-  background-image: url(/assets/noise.gif);
-  background-color: white;
+.elevator-button  {
+  	position: fixed;
+  	width: 36px;
+  	height: 36px;
+  	background-image: url(/assets/noise.webp);
+  	background-color: white;
 }

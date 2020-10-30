@@ -74,7 +74,7 @@ function listLoad() {
     entry.target = "_blank";
     div.className = "entry";
     div.id = i;
-    div.innerHTML = "<img height='25' width='25' src='https://i.olsh.me/icon?size=25&url=" + values[i][0] + "'>" + values[i][1];
+    div.innerHTML = "<img class='no-select' height='25' width='25' src='https://i.olsh.me/icon?size=25&url=" + values[i][0] + "'>" + values[i][1];
     document.getElementById("list").appendChild(div);
     document.getElementById(i).appendChild(entry);
     x += values[i];

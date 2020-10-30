@@ -1,0 +1,12 @@
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: #1b1b1b;
+    color: white;
+}
+a {
+    color: #005fee;
+}

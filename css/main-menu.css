@@ -1,58 +1,43 @@
 body {
   background-color: black;
-  font-family: 'Roboto', sans-serif;
-}
-.box {
-  display: flex;
-  flex-direction: column;
-  width: max-content;
-  color: white;
-  font-size: 40px;
-}
-.box.about {
-  font-size: 18px;
-}
-.box div{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.entry div {
-  font-size: 20px;
-}
-.box:hover a {
-    opacity: .5;
-}
-.box a:hover {
-  font-weight: bolder;
-  opacity: 1;
-  color: black;
-  background-color: white;
-  width: max-content;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-}
-.box a:hover + div {
-  font-weight: bolder;
-  color: white;
-  display: block;
-}
-.box.entry div:hover {
-  display:none;
 }
 a {
   color: white;
   text-decoration: none;
 }
-#styleBox {
-  width: fit;
-  height:50px;
+#gradient-box {
+  height: 50px;
   background-image: linear-gradient(to right, cyan,blue,purple);
-  cursor: pointer;
+}
+.list {
+  width: max-content;
+  color: white;
+  font-size: 40px;
+}
+.entry{
+  margin: 10px 0px 10px 0px;
 }
 .about {
   display: none;
+  font-size: 20px;
 }
-.about:hover {
-display: block;
+.list:hover a {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.list > .entry:hover a{
+  opacity: 1;
+  background-color: white;
+  font-weight: bolder;
+  color: black;
+  width: max-content;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.list > .entry:hover .about{
+  font-weight: bolder;
+  color: white;
+  display: block;
+  transition: 0.2s;
 }

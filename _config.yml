@@ -1,6 +1,6 @@
-title: ayes-web
-baseurl: /
-url: "https://ayes-web.github.io"
+title: Ayes
+baseurl: 
+url: "https://ayes.tk/"
 
 gems:
   - jekyll-redirect-from
