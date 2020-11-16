@@ -1,0 +1,16 @@
+body {
+    background-color: #1b1b1b;
+    color: white;
+}
+a {
+    color: #005fee;
+}
+.code {
+    border: 2px solid #333333;
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+}
+.title {
+    margin-bottom: 50px;
+}

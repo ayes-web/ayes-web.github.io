@@ -1,0 +1,72 @@
+body {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+}
+.cubes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cubes a {
+    margin: 3%;
+}
+#cube2 {
+    animation-timing-function: ease-in-out;
+}
+#cube3 {
+    animation-timing-function: ease-in;
+}
+.cube {
+    position: relative;
+    animation-name: spawn;
+    animation-duration: 1s;
+
+    background-color: #C4C4C4;
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    transition: 0s;
+    box-shadow: black 10px 10px 10px;
+}
+.cube:hover {
+    background-color: white;
+    transition: .5s;
+    box-shadow: black 10px 10px 0px;
+    cursor: pointer;
+}
+.cube:hover + .float {
+    bottom: 200px;
+    animation-name: textFloat;
+    animation-duration: 0.7s;
+}
+.float {
+    bottom: -300px;
+    position: fixed;
+    z-index: 1;
+    font-size: 70px;
+    font-family: "Courier New", "Courier", "monospace";
+    font-weight: bold;
+}
+@keyframes spawn {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 200px;
+    }
+}
+@keyframes textFloat {
+    from {
+        bottom: -300px;
+    }
+    to {
+        bottom: 200px;
+    }
+}
+html, body {
+    background-image: url('/assets/space2.png');
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

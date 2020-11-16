@@ -1,0 +1,30 @@
+---
+permalink: /ffmpeg/
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ffmpeg</title>
+        <link rel="stylesheet" href="/css/ffmpeg.css">
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="shortcut icon" type="image/jpg" href="/assets/noise.webp"/>
+    </head>
+    <body>
+        <h1 class="text-center title">Handy FFmpeg commands</h1>
+        <div>
+            <h3>Records your screen</h3>
+            <p>Both only work on systems that use xorg i believe?</p>
+            <div class="code">
+                <p>ffplay -f x11grab -i :1</p>
+                <p>ffmpeg -f x11grab -i :1 filename.mp4</p>
+            </div>
+            <h3>Puts audio over image</h3>
+            <div class="code">
+                <p>ffmpeg -i image.png -i music.flac -t 5 out.webm</p>
+            </div>
+        </div>
+    </body>
+</html>
