@@ -47,6 +47,7 @@ body {
     font-size: 70px;
     font-family: "Courier New", "Courier", "monospace";
     font-weight: bold;
+    text-shadow: #7D7A7A 7px 10px 0px;
 }
 @keyframes spawn {
     from {
