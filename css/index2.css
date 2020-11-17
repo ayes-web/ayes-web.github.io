@@ -36,7 +36,7 @@ body {
     cursor: pointer;
 }
 .cube:hover + .float {
-    bottom: 200px;
+    bottom: 150px;
     animation-name: textFloat;
     animation-duration: 0.7s;
 }
@@ -62,7 +62,7 @@ body {
         bottom: -300px;
     }
     to {
-        bottom: 200px;
+        bottom: 150px;
     }
 }
 html, body {
@@ -71,3 +71,27 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
+.cube p {
+    display: none;
+}
+@media screen and (max-width: 700px) and (min-width: 0px) {
+    .cube {
+        display: flex;
+        color: black;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .cube:hover {
+        text-decoration: none;
+    }
+    .cube p {
+        display: flex;
+    }
+    .float {
+        display: none;
+    }
+}  
