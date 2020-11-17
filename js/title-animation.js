@@ -5,13 +5,21 @@ async function title_cycle(default_title) {
         document.title = title;
         while (title.length >= 1) {
             title = title.substring(0, title.length - 1);
-            document.title = title;
+            if (title == "") {
+                document.title = "​";
+            } else {
+                document.title = title;
+            }
             await new Promise(r => setTimeout(r, 300));
         }
         while (title.length < default_title.length) {
             title = title.concat(default_title[p]);
             p++;
-            document.title = title;
+            if (title == "") {
+                document.title = "​";
+            } else {
+                document.title = title;
+            }
             await new Promise(r => setTimeout(r, 300));
         }
     }
