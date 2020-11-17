@@ -9,8 +9,9 @@ function random() {
 }
 
 var length = 10;
-var range = document.getElementById("range");
+var range = document.getElementById("range"); 
 var input = document.getElementById("input");
+var pause = document.getElementById("pause");
 
 range.oninput = function () {
   length = this.value;
@@ -27,4 +28,8 @@ input.oninput = function () {
   }
 };
 
-setInterval(function () { document.getElementById("random-string").innerHTML = random(); }, 100);
+setInterval(function () { 
+  if (pause.checked == false) {
+    document.getElementById("random-string").innerHTML = random(); 
+  }
+}, 100);
