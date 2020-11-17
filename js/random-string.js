@@ -28,8 +28,19 @@ input.oninput = function () {
   }
 };
 
+var paused = false;
+function pause_now() {
+  if (paused == false) {
+    paused = true;
+    pause.innerHTML = "Resume";
+  } else {
+    paused = false;
+    pause.innerHTML = "Pause";
+  }
+}
+
 setInterval(function () { 
-  if (pause.checked == false) {
+  if (paused == false) {
     document.getElementById("random-string").innerHTML = random(); 
   }
 }, 100);
