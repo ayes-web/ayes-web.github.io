@@ -1,17 +1,17 @@
 //Saves to browser storage
 function save() {
     ready_to_Save = JSON.stringify(player);
-    localStorage.gm = ready_to_Save;
+    localStorage.ig = ready_to_Save;
     console.log("Saved");
 }
 
 //Returns loaded player save
 function load() {
     console.log("Loaded");
-    if (localStorage.gm == undefined) {
+    if (localStorage.ig == undefined) {
         return default_player;
     } else {
-        return JSON.parse(localStorage.gm);
+        return JSON.parse(localStorage.ig);
     }
 }
 
