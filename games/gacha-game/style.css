@@ -1,0 +1,53 @@
+body {
+    background-color: #252526;
+    color: white;
+    user-select: none;
+}
+
+.info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#load {
+    width: 100%;
+    background-color: green;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.button {
+    font-size: 40px;
+}
+
+.eggs {
+    font-size: 50px;
+}
+
+#inv_slots {
+    font-size: 30px;
+}
+
+#trash2 {
+    margin-top: 10px;
+    color: green;
+}
+
+#money_display, #money_per_second_display, .inv-slot, #save_button, #egg1, #egg2 {
+    color:  white;
+}
+
+#money_display:hover, #money_per_second_display:hover, .inv-slot:hover, #save_button:hover, #egg1:hover, #egg2:hover {
+    color:#b5b5b5;
+}
+
+.deletion_select {
+    color: red;
+}
+.container {
+    position: unset;
+}
+.deletion_select:hover {
+    color: #d00000;
+}
