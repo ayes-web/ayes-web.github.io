@@ -8,7 +8,11 @@ function save() {
 //Returns loaded player save
 function load() {
     console.log("Loaded");
-    return JSON.parse(localStorage.gm);
+    if (localStorage.gm == undefined) {
+        return default_player;
+    } else {
+        return JSON.parse(localStorage.gm);
+    }
 }
 
 //Clears session and storage save file

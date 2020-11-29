@@ -8,7 +8,11 @@ function save() {
 //Loads from browser storage
 function load() {
     console.log("Loaded");
-    return JSON.parse(localStorage.gm);
+    if (localStorage.gm == undefined) {
+        return default_player;
+    } else {
+        return JSON.parse(localStorage.gm);
+    }
 }
 
 //Clears current session & storage save
