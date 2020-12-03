@@ -2,7 +2,10 @@ body {
     background-color: #1b1b1b;
     color: white;
 }
-a {
-    color: #005fee;
-    text-decoration: none;
+.container {
+    margin-top: 30px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
 }

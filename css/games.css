@@ -1,0 +1,22 @@
+.game {
+    border: 10px solid;
+    border-image: linear-gradient(90deg, rgba(158,158,158,1) 0%, rgba(255,255,255,1) 69%,rgba(158,158,158,1) 90%) 1;
+    margin: 10px;
+    margin-top: 30px;
+}
+.title {
+    color: white;
+    font-size: 50px;
+}
+.title:hover {
+    color: #bebebe;
+}
+
+.description {
+    color: white;
+    font-size: 25px;
+}
+body {
+    background-color: #1b1b1b;
+    color: white;
+}

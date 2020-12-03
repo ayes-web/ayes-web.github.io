@@ -74,7 +74,7 @@ html, body {
 .cube p {
     display: none;
 }
-@media screen and (max-width: 700px) and (min-width: 0px), (max-height: 800px) and (min-height: 0px){
+@media screen and (max-width: 700px) and (min-width: 0px), (max-height: 830px) and (min-height: 0px){
     .cube {
         display: flex;
         color: black;

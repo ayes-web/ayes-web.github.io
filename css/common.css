@@ -15,3 +15,31 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.nice-link {
+    color: #005fee;
+    text-decoration: none;
+}
+.nice-link:hover {
+    animation: blink 1s infinite alternate;
+    text-decoration: none;
+}
+@keyframes blink
+{
+	from {
+		color: #005fee;
+	}
+	to {
+		color: cyan;
+	}
+}
+.bold-text {
+    font-weight: bold;
+}
