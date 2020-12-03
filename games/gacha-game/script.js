@@ -22,8 +22,8 @@ function clear_save() {
     localStorage.gm = ready_to_save;
     console.log("Cleared save!");
     generate_inventory();
-    generate_deletable_slots();
     update_display();
+    document.getElementById("buy_inv").innerHTML = `Inventory slot $${player.inventory.price}`
 }
 
 //Updates all the numbers on display
@@ -36,10 +36,10 @@ function update_display() {
 //Calculates money per second
 function calculate_money_per_second() {
     let money_per_second = 0;
-    for (i = 0; player.inventory_slots >= i; i++) {
-        if (player.inventory[i] >= eggs.normal.id_start && player.inventory[i] <= eggs.normal.id_end) {
+    for (i = 0; player.inventory.slots >= i; i++) {
+        if (player.inventory.items[i] >= eggs.normal.id_start && player.inventory.items[i] <= eggs.normal.id_end) {
             money_per_second += eggs.normal.money_per_second;
-        } else if (player.inventory[i] >= eggs.normal2.id_start && player.inventory[i] <= eggs.normal2.id_end) {
+        } else if (player.inventory.items[i] >= eggs.normal2.id_start && player.inventory.items[i] <= eggs.normal2.id_end) {
             money_per_second += eggs.normal2.money_per_second;
         }
     }
@@ -47,12 +47,20 @@ function calculate_money_per_second() {
     player.money_per_second = Math.round(10 * player.money_per_second) / 10;
 }
 
+//Rounds number to the tenth
+function to_tenth(number) {
+    return Math.round(10 * number) / 10
+}
+
 //Start game state
 var default_player = {
     money_total: 10,
     money_per_second: 0,
-    inventory: [],
-    inventory_slots: 6
+    inventory: {
+        items: [],
+        slots: 12,
+        price: 1000
+    }
 }
 
 //random number in range
@@ -63,7 +71,7 @@ function random_number(min, max) {
 //Defines player & loads data
 var player = load();
 
-//Money numbers
+//Money number elements
 money_display = document.getElementById("money_display");
 money_per_second_display = document.getElementById("money_per_second_display");
 

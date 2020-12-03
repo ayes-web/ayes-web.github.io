@@ -27,6 +27,12 @@ body {
 
 #inv_slots {
     font-size: 30px;
+    border: solid white 3px;
+    cursor: default;
+}
+.inv-slot {
+    border: 1px solid grey;
+    cursor: default;
 }
 
 #trash2 {
@@ -45,9 +51,38 @@ body {
 .deletion_select {
     color: red;
 }
-.container {
-    position: unset;
-}
 .deletion_select:hover {
     color: #d00000;
+}
+
+#menu {
+    cursor: pointer;
+    text-align: center;
+    background-color: #555;
+}
+#menu div div {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.text-box {
+    border: 2px solid #333333;
+    background-color: #333333;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    user-select: all;
+}
+input {
+    outline: none;
+}
+#data1 {
+    margin-bottom: 30px;
+}
+#data1 button {
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#data2 button {
+    margin-top: 10px;
 }

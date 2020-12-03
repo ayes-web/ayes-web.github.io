@@ -1,43 +1,32 @@
 main_menu = document.getElementById("main_menu");
 settings_menu = document.getElementById("settings_menu");
 
-/*
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-async function switch_pages() {
-    move_amount = 5;
-    if (settings_menu.style.left == "0px") {
-        let settings_cords = 0
-        let main_cords = -1000
-        while(settings_menu.style.left != "-1000px" && main_menu.style.left != "0px") {
-            settings_menu.style.left = `${settings_cords}px`;
-            main_menu.style.left = `${main_cords}px`;
+home_button = document.getElementById("home_button");
+settings_button = document.getElementById("settings_button");
 
-            settings_cords -= move_amount;
-            main_cords += move_amount;
-            await sleep(1)
-        }
-    } else {
-        let settings_cords = -1000
-        let main_cords = 0
-        while(settings_menu.style.left != "0px" && main_menu.style.left != "-1000px") {
-            settings_menu.style.left = `${settings_cords}px`;
-            main_menu.style.left = `${main_cords}px`;
-
-            settings_cords += move_amount;
-            main_cords -= move_amount;
-            await sleep(1)
-        }
-    }
-}
-*/
-function switch_pages() {
-    if (settings_menu.hidden == true) {
+function switch_pages(page) {
+    if (page == "settings_menu") {
         main_menu.hidden = true;
         settings_menu.hidden = false;
-    } else {
-        settings_menu.hidden = true;
+
+        settings_button.style.backgroundColor = "green"
+        home_button.style.backgroundColor = ""
+    } else if (page == "main_menu") {
         main_menu.hidden = false;
+        settings_menu.hidden = true;
+
+        home_button.style.backgroundColor = "green"
+        settings_button.style.backgroundColor = ""
     }
+}
+
+home_button.click();
+function export_data() {
+    document.getElementById("export_data").innerHTML = btoa(localStorage.gm)
+}
+function import_data() {
+    /*
+    localStorage.gm = JSON.stringify(atob(document.getElementById("import_data").value))
+    location.reload()
+    */
 }

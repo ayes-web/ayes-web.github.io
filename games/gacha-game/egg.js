@@ -18,14 +18,14 @@ function buy_egg(egg_type) {
             pet = Math.floor(random_number(eggs.normal.id_start, eggs.normal.id_end));
 
             player.money_total -= eggs.normal.price;
-            player.inventory[find_open_slot()] = pet;
+            player.inventory.items[find_open_slot()] = pet;
         }
         if (egg_type == "normal2" && player.money_total >= eggs.normal2.price) {
 
             pet = Math.floor(random_number(eggs.normal2.id_start, eggs.normal2.id_end));
 
             player.money_total -= eggs.normal2.price;
-            player.inventory[find_open_slot()] = pet;
+            player.inventory.items[find_open_slot()] = pet;
         }
     }
 }

@@ -12,19 +12,45 @@ permalink: /games/gacha-game/
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idle game</title>
+    <link rel="shortcut icon" type="image/jpg" href="/assets/noise.webp" />
 </head>
 
 <body>
+    <div id="menu" class="container-fluid">
+        <div class="row">
+            <div type="button" id="home_button" class="col" onclick="switch_pages('main_menu')">Home</div>
+            <div type="button" id="settings_button" class="col" onclick="switch_pages('settings_menu')">Settings</div>
+        </div>
+    </div>
+
     <div id="settings_menu" class="container" hidden>
         <h1 class="text-center">Settings</h1>
-    </div>
-    <div id="main_menu" class="container">
-        <div class="info">
-            <i id="save_button" class="button col fas fa-save" type="button" onclick="save();alert('Game saved!')"></i>
-            <i id="trash1" onclick="delete_switch()" type="button" class="button col fas fa-trash"></i>
-            <i id="trash2" onclick="delete_multiple()" type="button" class="button col fas fa-check-circle" hidden></i>
-        </div>
 
+        <div id="data1">
+            <div class="text-box text-break" id="export_data"></div>
+            <button onclick="export_data()" class="btn btn-secondary">Export data</button>
+            <button onclick="clear_save()" class="btn btn-primary">Clear save!</button>
+        </div>
+        <div id="data2">
+            <input id="import_data" class="text-box" type="text">
+            <br>
+            <button onclick="import_data()" class="btn btn-secondary">Import data</button>
+        </div>
+        
+
+    </div>
+    <div id="main_menu" class="container" hidden>
+        <br>
+        <p>Note: Currently pets from egg 2 don't have textures so it just shows the id of it</p>
+
+        <div class="info">
+            <i id="save_button" class="button fas fa-save" type="button" onclick="save();alert('Game saved!')">Save</i>
+        </div>
+        <div class="info">
+            <i id="trash1" onclick="delete_switch()" type="button" class="button fas fa-trash"> Delete</i>
+            <i id="trash2" onclick="delete_multiple()" type="button" class="button fas fa-check-circle" hidden>
+                Confirm</i>
+        </div>
         <div class="info row row-cols-2">
             <h1 id="money_display" class="col"><i class="fas fa-money-bill-wave"></i> 0</h1>
             <h1 id="money_per_second_display" class="col"></h1>
@@ -33,9 +59,12 @@ permalink: /games/gacha-game/
         <div class="eggs">
             <i id="egg1" type="button" onclick="buy_egg('normal')" class="fas fa-egg"> Egg 1</i>
             <i id="egg2" type="button" onclick="buy_egg('normal2')" class="fas fa-egg"> Egg 2</i>
+            <div id="buy_inv" onclick="buy_pet_slot()" class="btn btn-secondary" type="button">Inventory slot $1000
+            </div>
         </div>
 
-        <div id="inv_slots" class="row row-cols-3"></div>
+        <br>
+        <div id="inv_slots" class="row row-cols-8"></div>
     </div>
     <footer>
         <script src="/games/gacha-game/script.js"></script>
