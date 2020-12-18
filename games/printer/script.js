@@ -18,7 +18,7 @@ function load() {
 //Clears session and storage save file
 function clear_save() {
     player = default_player;
-    localStorage.gm = JSON.stringify(default_player);
+    localStorage.dp = JSON.stringify(default_player);
     save()
 }
 
@@ -30,15 +30,27 @@ function update_display() {
         player.printer2 = default_player.printer2
     }
 
-    document.getElementById("material").innerHTML = "<div class='important-number'> Material: " + formatNum(player.material) + "</div>"
-    document.getElementById("printer").innerHTML = "Amount: " + formatNum(player.printer.amount)
-    document.getElementById("printerp").innerHTML = "Make <b>Basic printer</b> with <b>" + formatNum(player.printer.price) + "</b> material"
+    document.getElementById("material").innerHTML = "<div class='important-number'> Material: " + formatNum(to_tenth(player.material)) + "</div>"
 
-    document.getElementById("printer2").innerHTML = "Amount: " + formatNum(player.printer2.amount)
-    document.getElementById("printerp2").innerHTML = "Make <b>Advanced printer</b> with <b>" + formatNum(player.printer2.price) + "</b> material"
-
-    document.getElementById("printer3").innerHTML = "Amount: " + formatNum(player.printer3.amount)
-    document.getElementById("printerp3").innerHTML = "Make <b>Printer factory</b> with <b>" + formatNum(player.printer3.price) + "</b> material"
+    //Updates only if they need to be updated
+    if (document.getElementById("printer").innerHTML != "Amount: " + formatNum(player.printer.amount)) {
+        document.getElementById("printer").innerHTML = "Amount: " + formatNum(player.printer.amount)
+    }
+    if (document.getElementById("printerp").innerHTML != "Make <b>Basic printer</b> with <b>" + formatNum(player.printer.price) + "</b> material") {
+        document.getElementById("printerp").innerHTML = "Make <b>Basic printer</b> with <b>" + formatNum(player.printer.price) + "</b> material"
+    }
+    if (document.getElementById("printer2").innerHTML != "Amount: " + formatNum(player.printer2.amount)) {
+        document.getElementById("printer2").innerHTML = "Amount: " + formatNum(player.printer2.amount)
+    }
+    if (document.getElementById("printerp2").innerHTML != "Make <b>Advanced printer</b> with <b>" + formatNum(player.printer2.price) + "</b> material") {
+        document.getElementById("printerp2").innerHTML = "Make <b>Advanced printer</b> with <b>" + formatNum(player.printer2.price) + "</b> material"
+    }
+    if (document.getElementById("printer3").innerHTML != "Amount: " + formatNum(player.printer3.amount)) {
+        document.getElementById("printer3").innerHTML = "Amount: " + formatNum(player.printer3.amount)
+    }
+    if (document.getElementById("printerp3").innerHTML != "Make <b>Printer factory</b> with <b>" + formatNum(player.printer3.price) + "</b> material") {
+        document.getElementById("printerp3").innerHTML = "Make <b>Printer factory</b> with <b>" + formatNum(player.printer3.price) + "</b> material"
+    }
 
     if (player.material >= 222 || player.printer2.amount > 0) {
         document.getElementById("print2").hidden = false
@@ -51,28 +63,21 @@ function update_display() {
         document.getElementById("print3").hidden = true
     }
 
+    //Makes buttons disabled
     if (player.material < player.printer.price) {
-        document.getElementById("printerp").classList.remove("btn-primary")
-        document.getElementById("printerp").classList.add("btn-secondary")
+        document.getElementById("printerp").classList.add("disabled")
     } else {
-        document.getElementById("printerp").classList.add("btn-primary")
-        document.getElementById("printerp").classList.remove("btn-secondary")
+        document.getElementById("printerp").classList.remove("disabled")
     }
-
     if (player.material < player.printer2.price) {
-        document.getElementById("printerp2").classList.remove("btn-primary")
-        document.getElementById("printerp2").classList.add("btn-secondary")
+        document.getElementById("printerp2").classList.add("disabled")
     } else {
-        document.getElementById("printerp2").classList.add("btn-primary")
-        document.getElementById("printerp2").classList.remove("btn-secondary")
+        document.getElementById("printerp2").classList.remove("disabled")
     }
-
     if (player.material < player.printer3.price) {
-        document.getElementById("printerp3").classList.remove("btn-primary")
-        document.getElementById("printerp3").classList.add("btn-secondary")
+        document.getElementById("printerp3").classList.add("disabled")
     } else {
-        document.getElementById("printerp3").classList.add("btn-primary")
-        document.getElementById("printerp3").classList.remove("btn-secondary")
+        document.getElementById("printerp3").classList.remove("disabled")
     }
 }
 

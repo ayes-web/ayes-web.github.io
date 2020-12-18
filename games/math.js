@@ -4,13 +4,12 @@ function to_tenth(number) {
 }
 //Calculates percent between 2 numbers
 function calc_missing_percent(num1, num2) {
-    percent = to_tenth()
+    percent = Math.round(10 * ((num1/num2) * 100))/10;
     if (percent <= 99.9) {
-        return percent
+        return Math.round(10 * ((num1/num2) * 100))/10;
     } else {
         return 100;
     }
-
 }
 function up_percent(num, percent) {
     percent = percent/100

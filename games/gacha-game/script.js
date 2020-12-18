@@ -28,8 +28,14 @@ function clear_save() {
 
 //Updates all the numbers on display
 function update_display() {
-    money_display.innerHTML = '<i class="fas fa-money-bill-wave"></i> ' + Math.round(10 * player.money_total) / 10;
-    money_per_second_display.innerHTML = '<i class="fas fa-business-time"></i> ' + Math.round(10 * player.money_per_second) / 10;
+
+    if (money_display.innerHTML != '<i class="fas fa-money-bill-wave"></i> ' + Math.round(10 * player.money_total) / 10) {
+        money_display.innerHTML = '<i class="fas fa-money-bill-wave"></i> ' + Math.round(10 * player.money_total) / 10;
+    }
+    if (money_per_second_display.innerHTML != '<i class="fas fa-business-time"></i> ' + Math.round(10 * player.money_per_second) / 10) {
+        money_per_second_display.innerHTML = '<i class="fas fa-business-time"></i> ' + Math.round(10 * player.money_per_second) / 10;
+    }
+    
     update_inventory();
 }
 

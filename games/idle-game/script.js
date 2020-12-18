@@ -18,18 +18,24 @@ function load() {
 //Clears session and storage save file
 function clear_save() {
     player = default_player;
-    localStorage.gm = JSON.stringify(default_player);
+    localStorage.ig = JSON.stringify(default_player);
 }
 
 function update_display() {
 
     //Updates money numbers
     money_display.innerHTML = '<i class="fas fa-money-bill-wave"></i> ' + to_tenth(player.money_total);
-    money_per_second_display.innerHTML = '<i class="fas fa-business-time"></i> ' + to_tenth(player.money_per_second);
 
+    if (money_per_second_display.innerHTML != '<i class="fas fa-business-time"></i> ' + to_tenth(player.money_per_second)) {
+        money_per_second_display.innerHTML = '<i class="fas fa-business-time"></i> ' + to_tenth(player.money_per_second);
+    }   
     //Updates factory numbers
-    factory_amount_display.innerHTML = '<i class="fas fa-industry"></i> ' + player.factory.amount;
-    factory_price_display.innerHTML = '<i class="fas fa-dollar-sign"></i> ' + player.factory.price;
+    if (factory_amount_display.innerHTML != '<i class="fas fa-industry"></i> ' + player.factory.amount) {
+        factory_amount_display.innerHTML = '<i class="fas fa-industry"></i> ' + player.factory.amount;
+    }
+    if (factory_price_display.innerHTML != '<i class="fas fa-dollar-sign"></i> ' + player.factory.price) {
+        factory_price_display.innerHTML = '<i class="fas fa-dollar-sign"></i> ' + player.factory.price; 
+    }
 
     //Disables button when you can't buy any factories
     if (calc_max_factory() >= 1) {
