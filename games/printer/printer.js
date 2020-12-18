@@ -1,6 +1,6 @@
 function buy_printer(type) {
-    if (player.material >= player[type].price && player[type].amount >= 1) {
-        
+    if (player.material >= player[type].price) {
+
         player.material -= player[type].price
         player[type].amount++
 

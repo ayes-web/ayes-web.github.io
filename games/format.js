@@ -18,6 +18,15 @@ function formatNum(number) {
         return num
     }
 }
+
+/*
+1 000 = 4 char - K
+1 000 000 = 7 char - M
+1 000 000 000 = 10 char - B
+1 000 000 000 = 13 char - T
+1 000 000 000 000 = 16 char - Q
+*/
+
 function isExponential(number) {
     b = number.toExponential().toString()
     e = b.split("e+")
@@ -27,10 +36,3 @@ function isExponential(number) {
         return false
     }
 }
-/*
-1 000 = 4 char - K
-1 000 000 = 7 char - M
-1 000 000 000 = 10 char - B
-1 000 000 000 = 13 char - T
-1 000 000 000 000 = 16 char - Q
-*/
