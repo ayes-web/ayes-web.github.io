@@ -1,11 +1,10 @@
-body {
-    background-color: #1b1b1b;
+html, body {
+    background-color: #000000;
     color: white;
 }
 .container {
-    margin-top: 30px;
+    margin-top: 50px; 
 }
-.icon {
-    width: 20px;
-    height: 20px;
+.icon-background {
+    background-color: white;
 }
