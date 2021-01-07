@@ -1,5 +1,6 @@
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
 }
 .no-select {
     -webkit-user-select: none;
@@ -42,4 +43,8 @@ a:hover {
 }
 .bold-text {
     font-weight: bold;
+}
+.container {
+    margin-left: 50px;
+    margin-top: 20px;
 }
