@@ -1,0 +1,34 @@
+---
+permalink: /loop/
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abusing meta redirect">
+    <title>Abusing meta redirect</title>
+    <script src="/js/space.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/space.css">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" type="image/jpg" href="/assets/noise.webp" />
+  </head>
+  <body>
+  <div class="container">
+    <ul>
+      <ol>
+        <a class="nice-link" href="1-2.html">2 entry redirect loop</a>
+      </ol>
+      <ol>
+        <a class="nice-link" href="1.html">5 entry redirect loop</a>
+      </ol>
+      <ol>
+        <a class="nice-link" href="refresh.html">refresh loop</a>
+      </ol>
+      <ol>
+        <a class="nice-link" href="self-iframe-loop.html">iframe loop</a>
+      </ol>
+    </ul>
+  </div>
+  </body>
+</html>
