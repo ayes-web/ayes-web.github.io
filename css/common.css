@@ -25,7 +25,7 @@ a:hover {
 }
 
 .nice-link {
-    color: #005fee;
+    color: #3c86f5;
     text-decoration: none;
 }
 .nice-link:hover {
@@ -35,7 +35,7 @@ a:hover {
 @keyframes blink
 {
 	from {
-		color: #005fee;
+		color: #3c86f5;
 	}
 	to {
 		color: cyan;
@@ -46,5 +46,8 @@ a:hover {
 }
 .container {
     margin-left: 50px;
+    margin-right: 50px;
     margin-top: 20px;
+
+    padding-bottom: 30px;
 }
