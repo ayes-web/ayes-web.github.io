@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ayes.tk
+Token: 7a4a5f111e78bbb7ce0c477a37095bd8978343beed75452069af6aba6d536723
