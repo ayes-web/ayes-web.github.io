@@ -10,3 +10,6 @@ exclude:
  - Gemfile.lock
 
 permalink: pretty
+
+include:
+ - .well-known
