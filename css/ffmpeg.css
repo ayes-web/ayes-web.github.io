@@ -2,9 +2,6 @@ body {
     background-color: #1b1b1b;
     color: white;
 }
-a {
-    color: #005fee;
-}
 .code {
     border: 2px solid #333333;
     background-color: #333333;
@@ -13,4 +10,14 @@ a {
 }
 .title {
     margin-bottom: 50px;
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    .code {
+        border: 2px solid #e9e9e9;
+        background-color: #e9e9e9;
+    }
 }

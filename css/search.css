@@ -3,7 +3,11 @@ body {
     color: white;
 }
 a {
-    color: #005fee;
+    color: #2e69dd;
+}
+a:hover {
+    text-decoration: underline;
+    color: #2e9ddd;
 }
 .code {
     border: 2px solid #333333;
@@ -18,4 +22,17 @@ li {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    .code {
+        border: 2px solid #e9e9e9;
+        background-color: #e9e9e9;
+    }
+    a {
+        color: #004be2;
+    }
 }
